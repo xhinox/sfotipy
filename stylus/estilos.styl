@@ -1,0 +1,163 @@
+@import "normalize.styl"
+@import "fonts.styl"
+
+// VARIABLES
+gris_oscuro = #333333
+gris_claro = #818181
+rojo = #DB255B
+// VARIABLES
+
+// GENERALES
+body
+	font-family 'Varela Round', sans-serif
+	font-size 16px 	
+figure
+	margin 0
+img
+	vertical-align top
+a
+	text-decoration none
+// GENERALES
+
+// OOCSS CLASES
+.action
+	color white
+	font-size 1.2em
+	margin-right .5em
+	&:last-child
+		margin-right 0
+	&.gray
+		color gris_claro
+.actions
+	background rgba(black, .3)
+	bottom 0
+	left 0
+	position absolute
+	right 0
+.author
+	color gris_claro
+.border-bottom
+	border-bottom 1px solid gris_claro
+.button-menu
+	color gris_oscuro
+	left .5em
+	margin-top -10px
+	position absolute
+	top 50%
+.center-block
+	margin-right auto
+	margin-left auto
+.center-text
+	text-align center
+.container
+	font-size 0
+	padding 1.4rem
+	text-align center
+.left
+	float left
+.right
+	float right
+.menu
+	display none
+.name
+	color gris_oscuro
+.padding
+	padding 1em
+.padding-tb
+	padding 1em 0
+.right-text
+	text-align right
+.relative
+	position relative
+.wrap
+	width 1000px
+
+//GENERALES
+.header
+	height 3.5em
+	.title
+		font-size 1.1em
+		line-height 3.5em
+		margin 0
+		text-align center
+.playing
+	&.small
+		width 20rem
+		
+.progress
+	margin 1em 0
+	position relative
+	.min
+	.max
+		font-size .8em
+		position absolute
+		top -5px
+	.min
+		left 0
+	.max
+		right 0
+	.total
+		background gris_claro
+		border-radius 5px
+		height 5px
+		width 75%
+		margin-right auto
+		margin-left auto
+	.state
+		background rojo
+		border-radius 5px
+		height 5px
+		width 30%
+		position relative
+		
+	.circle
+		background gris_oscuro
+		border-radius 50%
+		height 10px
+		position absolute
+		right 0
+		top -2px
+		width 10px
+
+.song
+	display inline-block
+	font-size 1rem
+	margin-bottom 1em
+	margin-right 1em
+	text-align left
+	width 8rem
+	
+	&:nth-child(even)
+		margin-right 0em
+	p
+		margin .5em 0
+
+@media screen and (min-width:480px)
+	.song
+		&:nth-child(even)
+			margin-right 1em
+	.image
+		img
+			width 100%
+			height auto
+	.playing
+		&.medium
+			width auto
+			
+@media screen and (min-width: 1000px)
+	.button-menu
+		display none
+	.header
+		height auto
+		.title
+			display none
+	.isotipo
+		width 122px
+	.logo
+		padding 1.3em 0
+		overflow hidden
+
+
+
+
+
