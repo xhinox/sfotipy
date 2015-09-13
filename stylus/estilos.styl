@@ -4,6 +4,7 @@
 // VARIABLES
 gris_oscuro = #333333
 gris_claro = #818181
+gris_mas_claro = #F0F0F0
 rojo = #DB255B
 // VARIABLES
 
@@ -17,6 +18,9 @@ img
 	vertical-align top
 a
 	text-decoration none
+ul
+	margin 0
+	padding 0
 // GENERALES
 
 // OOCSS CLASES
@@ -57,6 +61,11 @@ a
 	float left
 .right
 	float right
+.input
+	border 1px gris_claro solid
+	height 2.5em
+	border-radius 5px
+	padding 0 1em 0 2em
 .menu
 	display none
 .name
@@ -69,6 +78,20 @@ a
 	text-align right
 .relative
 	position relative
+.round
+	border-radius 50%
+	overflow hidden
+.search-icon
+	position absolute
+	left .6em
+	top .8em
+	color gris_claro
+.close-icon
+	position absolute
+	right .5em
+	top .5em
+	font-size 1.2rem
+	color gris_claro
 .wrap
 	width 1000px
 
@@ -145,19 +168,53 @@ a
 			width auto
 			
 @media screen and (min-width: 1000px)
+	body
+		background gris_mas_claro
 	.button-menu
 		display none
 	.header
 		height auto
+		background white
 		.title
 			display none
+	.menu
+		display block
+		background gris_mas_claro
+		overflow hidden
+		.item
+			float left
+			list-style none
+			a
+				display block
+				padding 1em
+				color gris_oscuro
+				text-transform UPPERCASE
+				cursor pointer
+				border-top 5px solid transparent
+				&:hover
+					border-top 5px solid gris_oscuro		
+				
 	.isotipo
 		width 122px
 	.logo
 		padding 1.3em 0
 		overflow hidden
+		background white
 
-
-
-
+	.avatar
+		width 38px
+		height 38px
+	.username
+		color gris_claro
+		position relative
+		top 9px
+		margin-left .5em
+		&:after
+			border-left 7px solid transparent
+			border-right 7px solid transparent
+			border-top 8px solid gris_claro
+			content ""
+			display inline-block
+			margin-left .4em
+	
 
