@@ -2,7 +2,7 @@
 <html lang="es">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="widht=device-width, initial-scale=1, maximum-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		<title>Document</title>
 		<link rel="stylesheet" href="css/estilos.css" type="text/css">
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round" type="text/css">
@@ -39,7 +39,8 @@
 					</li>
 					<li class="item">
 						<a href="#">Profile</a>
-					</li><li class="item">
+					</li>
+					<li class="item">
 						<a href="#">Settings</a>
 					</li>
 					<li class="item">
@@ -289,4 +290,19 @@
 
 		</section>
 	</body>
+
+	<script id="song-template" type="text/x-handlebars-template">
+		<span>{{name}} - {{author}}</span>
+		<span class="right">
+			<a href="#" class="action icon-add gray"></a>
+			<a href="#" class="action icon-love gray"></a>
+			<a href="#" class="action icon-share gray"></a>
+		</span>
+	</script>
+
+	<script src="lib/jquery.js"></script>
+	<script src="lib/underscore.js"></script>
+	<script src="lib/handlebars-v4.0.2.js"></script>
+	<script src="lib/backbone.js"></script>
+	<script src="js/main.js"></script>
 </html>
